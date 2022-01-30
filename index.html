@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>PokédexCity</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" type="image/x-icon" href="IMG/pokebola.png">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho_image" src="IMG/PokemonLogo.png" alt="Logo">
+    </header>
+    <main class="conteudo">
+        <section class="conteudo_principal">
+            <div class="conteudo_principal_texto">
+                <h1 class="conteudo_principal_titulo">Pokémon</h1>
+                <h2 class="conteudo_principal_subtitulo">Gotta Catch em All!</h2>
+                <div id="container_textInput">
+                    <h2 class="conteudo_principal_cidade">Digite uma Cidade:</h2>
+                    <input id="city_input" type="text" placeholder="Digite a Cidade Aqui!"> 
+                </div>    
+                <div id="button_container">
+                    <button id="button_encontrar"><img height="200px" width="200px" src="IMG/pokebola.png"></button>
+                </div>
+            </div>
+            <div class="pokedex_container">
+                <img class="pokedex_image"src="IMG/pokedexEditada 1.png">
+                <div class="pokedex_tela_esquerda">
+                    <img id="pokemon_slot" width="210px" height="145px" src="IMG/Pikachu.png">
+                </div>
+                <div class="pokedex_tela_direita">
+                    <div class="container_temp">
+                        <div class="cidade_text">Campinas</div>
+                        <div class="temperatura">T</div>
+                        <div class="temperatura">°C</div>
+                    </div>
+                    <div class="estado">nublado</div>
+                    <div class="container_pokemon_info">
+                        <div id="name_pokemon">Name: Pikachu</div>
+                        <div id="type_pokemon">Type: Eletro</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="conteudo_secundario">
+            <h3 class="conteudo_secundario_titulo">Instruções de Uso</h3>
+            <p class="conteudo_secundario_paragrafo">1. Digite uma Cidade e clique na <strong>Pokébola</strong> .</p>
+            <p class="conteudo_secundario_paragrafo">2. <strong>A tela da esquerda da Pokédex</strong>, irá aparecer o Pokémon.</p>
+            <p class="conteudo_secundario_paragrafo">3. <strong>A tela da direita da Pokédex</strong>, Irá aparacer a temperatura da Cidade seu Clima atual, além do nome do Pokémon e seu Tipo.</p>
+            <p class="conteudo_secundario_paragrafo"><strong>"Tenha uma Boa Jornada!"</strong></p>
+        </section>
+    </main>
+    <footer class="rodape">
+        <img class="rodape_image" src="IMG/Pikachu.png">
+        <audio controls autoplay>
+            <source src="audio/startjourney.mp3" type="audio/mp3">
+        </audio>
+          
+    </footer>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/pokemon.js"></script>
+</body>
+</html>
