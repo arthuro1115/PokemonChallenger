@@ -27,7 +27,7 @@
 
 ```js
 const api = {
-    key: "8f1813d6a8e6d28c808351458f9623c6",
+    key: "mykey",
     base: "https://api.openweathermap.org/data/2.5/",
     lang: "pt_br",
     units: "metric"
